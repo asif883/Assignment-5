@@ -1,11 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P-Ticket</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fecc398964.js" crossorigin="anonymous"></script>
+    <style>
+        .font-raleway{
+            font-family: "Raleway", sans-serif;
+        }
+    </style>
 </head>
-<body>
-    
+<body class="font-raleway">
+    <header class="container mx-auto">
+      <nav>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>        
+              </div>
+              <a class="text-3xl font-bold">P-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>                    
+                    <li><a>About</a></li>                    
+                    <li><a>Destination</a></li>                    
+                    <li><a>Search</a></li>
+                  </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn text-green-400 text-xl btn-outline btn-success">Bus <i class="fa-solid fa-bus"></i></a>
+            </div>
+          </div>
+        </nav> 
+        <!-- banner section  -->
+        <section class="">
+            <div class="hero h-[550px] rounded-xl" style="background-image: url(images/banner.png);">
+                <div class="text-white text-center">
+                  <div class="">
+                    <h1 class="mb-5 space-y-3 text-5xl font-bold">End-to-End Travel with <br><span class="text-green-400">P Paribahan</span></h1>
+                    <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. <br> The integrated testing features allow for a streamlined .</p>
+                    <button class="btn btn btn-success">Buy Tickets</button>
+                  </div>
+                </div>
+              </div>
+        </section>   
+    </header>
+    <main class="container mx-auto">
+    <!-- offer section -->
+        <section>
+            <h1 class="text-center text-3xl mt-16 font-semibold mb-8">Best offers for you</h1>
+            <div class="flex flex-col lg:flex-row gap-10">
+                <div class="flex gap-10 bg-yellow-400 items-center rounded-xl flex-1">
+                    <div class="pl-16">
+                        <h2 class="font-extrabold text-3xl">15% OFF</h2>
+                        <p><span class="font-semibold">
+                            on your next purchase 
+                        </span><br>
+                         use by January 2024</p>
+                    </div>
+                    <img src="images/cupon-devider.png" alt="">
+                    <div>
+                        <h1 class="text-xl font-bold">NEW15</h1>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
+                <div class="flex gap-10 bg-rose-300 items-center rounded-xl flex-1">
+                    <div class="pl-16">
+                        <h2 class="font-extrabold text-3xl">20% OFF</h2>
+                        <p><span class="font-semibold">
+                            on your next purchase 
+                        </span><br>
+                         use by January 2024</p>
+                    </div>
+                    <img src="images/cupon-devider.png" alt="">
+                    <div>
+                        <h1 class="text-xl font-bold">Couple 20</h1>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-10"> 
+                <button class="btn btn-outline btn-accent">See more offer</button>
+            </div>
+        </section>
+        <!--ticket buy  -->
+        <section>
+            <div class="mt-14 bg-base-200">
+                <div class="pt-8 text-center">
+                    <h1 class="text-2xl font-bold mb-3">P.H Paribahan</h1>
+                    <p >Yes, you can run unit tests and view the results directly within the app. <br>The integrated testing features allow for a streamlined.</p>
+                </div> 
+                
+              </div>
+        </section>
+    </main>
 </body>
 </html>
