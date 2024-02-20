@@ -1,8 +1,10 @@
-
-
-    
+ function buyTicket(){
+    const element = document.getElementById('ticket');
+    element.scrollIntoView({ behavior: "smooth" });
+ }   
  let clicks = 0;
  const seatPrice= 550;
+ const seatNumber= 8;
 function seatClicked2(){
   clicks += 1;
   number = document.getElementById("clicks").innerHTML = clicks;
@@ -15,6 +17,8 @@ function seatClicked2(){
   seatDetails.classList.remove('hidden');
   let totalPrice = document.getElementById('total-price');
   totalPrice.innerText = number * seatPrice ; 
+  const seatReaming= document.getElementById('total-seat');
+  seatReaming.innerText= seatNumber - number;
      
 }
  function seatClicked(){
@@ -28,7 +32,9 @@ function seatClicked2(){
   const seatDetails=document.getElementById('seat-details1') 
   seatDetails.classList.remove('hidden');
   let totalPrice = document.getElementById('total-price');
-   totalPrice.innerText = number * seatPrice ;
+  totalPrice.innerText = number * seatPrice ;
+  const seatReaming= document.getElementById('total-seat');
+  seatReaming.innerText= seatNumber - number;
  }
  function seatClicked3(){
     clicks += 1;
@@ -42,6 +48,8 @@ function seatClicked2(){
     seatDetails.classList.remove('hidden')
     let totalPrice = document.getElementById('total-price');
     totalPrice.innerText = number * seatPrice ;
+    const seatReaming= document.getElementById('total-seat');
+    seatReaming.innerText= seatNumber - number;
  }
  function seatClicked4(){
   clicks += 1;
@@ -54,7 +62,69 @@ function seatClicked2(){
   const seatDetails=document.getElementById('seat-details4'); 
   seatDetails.classList.remove('hidden'); 
   let totalPrice = document.getElementById('total-price');
-   totalPrice.innerText = number * seatPrice ;
+  totalPrice.innerText = number * seatPrice ; 
+  const seatReaming= document.getElementById('total-seat');
+  seatReaming.innerText= seatNumber - number;
+ }
+ function seatClicked5(){
+  clicks += 1;
+  number = document.getElementById("clicks").innerText = clicks;
+  const clicked = document.getElementById('B1')
+  clicked.style.backgroundColor ='green'; 
+  seatName=clicked.innerText;
+  const replacedSeat2= document.getElementById('replaced-seat5');
+  replacedSeat2.innerText = seatName;  
+  const seatDetails=document.getElementById('seat-details5'); 
+  seatDetails.classList.remove('hidden'); 
+  let totalPrice = document.getElementById('total-price');
+  totalPrice.innerText = number * seatPrice ;
+  const seatReaming= document.getElementById('total-seat');
+  seatReaming.innerText= seatNumber - number;
+ }
+ function seatClicked6(){
+  clicks += 1;
+  number = document.getElementById("clicks").innerText = clicks;
+  const clicked = document.getElementById('B2')
+  clicked.style.backgroundColor ='green'; 
+  seatName=clicked.innerText;
+  const replacedSeat2= document.getElementById('replaced-seat6');
+  replacedSeat2.innerText = seatName;  
+  const seatDetails=document.getElementById('seat-details6'); 
+  seatDetails.classList.remove('hidden'); 
+  let totalPrice = document.getElementById('total-price');
+  totalPrice.innerText = number * seatPrice ;
+  const seatReaming= document.getElementById('total-seat');
+  seatReaming.innerText= seatNumber - number;
+ }
+ function seatClicked7(){
+  clicks += 1;
+  number = document.getElementById("clicks").innerText = clicks;
+  const clicked = document.getElementById('B3')
+  clicked.style.backgroundColor ='green'; 
+  seatName=clicked.innerText;
+  const replacedSeat2= document.getElementById('replaced-seat7');
+  replacedSeat2.innerText = seatName;  
+  const seatDetails=document.getElementById('seat-details7'); 
+  seatDetails.classList.remove('hidden'); 
+  let totalPrice = document.getElementById('total-price');
+  totalPrice.innerText = number * seatPrice ;
+  const seatReaming= document.getElementById('total-seat');
+  seatReaming.innerText= seatNumber - number;
+ }
+ function seatClicked8(){
+  clicks += 1;
+  number = document.getElementById("clicks").innerText = clicks;
+  const clicked = document.getElementById('B4')
+  clicked.style.backgroundColor ='green'; 
+  seatName=clicked.innerText;
+  const replacedSeat2= document.getElementById('replaced-seat8');
+  replacedSeat2.innerText = seatName;  
+  const seatDetails=document.getElementById('seat-details8'); 
+  seatDetails.classList.remove('hidden'); 
+  let totalPrice = document.getElementById('total-price');
+  totalPrice.innerText = number * seatPrice ;
+  const seatReaming= document.getElementById('total-seat');
+  seatReaming.innerText= seatNumber - number;
  }
 
  function success(){
